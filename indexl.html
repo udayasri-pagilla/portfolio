@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Udayasri | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <style>
+    * {
+      margin: 0; padding: 0; box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: 'Outfit', sans-serif;
+      background: linear-gradient(135deg, #fdfcfb, #e2d1c3);
+      color: #333;
+      overflow-x: hidden;
+    }
+    h2 {
+      font-size: 2.2rem;
+      color: #4b0082;
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+    .hero {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      text-align: center;
+      padding: 2rem;
+    }
+    .typing {
+      font-size: 1.5rem;
+      margin: 1rem 0;
+      color: #6a1b9a;
+      height: 30px;
+    }
+    .cta a {
+      background: #4b0082;
+      color: white;
+      padding: 12px 24px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    .cta a:hover {
+      background: #6a1b9a;
+    }
+    .socials {
+      margin-top: 2rem;
+    }
+    .socials a {
+      margin: 0 10px;
+      color: #4b0082;
+      font-size: 1.5rem;
+    }
+    .socials a:hover {
+      color: #6a1b9a;
+    }
+    .skill-item img {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      border-radius: 10px;
+    }
+    .skill-item img:hover {
+      transform: scale(1.1);
+      box-shadow: 0 8px 20px rgba(107, 36, 178, 0.3);
+    }
+  </style>
+</head>
+<body>
+
+<!-- HERO -->
+<section class="hero" data-aos="fade-up">
+  <h1>Hi, I'm <span style="color: #4b0082;">Udayasri Pagilla</span> 👋</h1>
+  <div class="typing"><span id="typed-text"></span></div>
+
+  <p style="max-width: 700px; font-size: 1.2rem; margin-top: 1.5rem; line-height: 1.7; color: #444;">
+    A passionate <strong>Computer Science Engineer</strong> who turns ideas into reality using code 💻.  
+    Skilled in building full-stack apps, machine learning tools, and accessible platforms like <strong>CareerSpark</strong>.  
+    I create tech with purpose, clarity, and joy ✨.
+  </p>
+
+  <div class="cta" style="margin-top: 2rem;">
+    <a href="#projects">💼 View My Work</a>
+    <a href="#contact" style="margin-left: 20px; background: #6a1b9a;">📩 Contact Me</a>
+  </div>
+
+  <div class="socials">
+    <a href="https://github.com/udayasri-pagilla" target="_blank"><i class="fab fa-github"></i></a>
+    <a href="https://linkedin.com/in/udayasri-pagilla-253633257" target="_blank"><i class="fab fa-linkedin"></i></a>
+    <a href="mailto:udayasripagilla1873@gmail.com"><i class="fas fa-envelope"></i></a>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" data-aos="fade-up" style="padding: 80px 20px; background: #fff;">
+  <h2>About Me 💁‍♀️</h2>
+  <div style="display: flex; flex-direction: column; align-items: center; gap: 20px; max-width: 800px; margin: auto;">
+    <img src="profile.jpg" alt="Udayasri" style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover; border: 4px solid #6a1b9a;">
+    <p style="font-size: 1.2rem; line-height: 1.7; color: #444;">
+      I'm <strong>Udayasri</strong>, a final-year CSE student 🎓 with a love for 
+      <strong>software development</strong>, <strong>machine learning</strong>, and solving real-world problems.
+      <br/><br/>
+      I’ve built smart tools like <span style="color:#7b2cbf;">CareerSpark</span> to match jobs to users,  
+      and a <span style="color:#7b2cbf;">Fake Review Detector</span> that uses NLP to stop fraud online.  
+      Let’s build something impactful together! 🚀
+    </p>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" data-aos="fade-up" style="padding: 80px 20px; background: #f8f3ff;">
+  <h2>Projects 💼</h2>
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; max-width: 1100px; margin: auto;">
+
+    <!-- CareerSpark -->
+    <div style="background: #fff; border-radius: 15px; padding: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+      <h3 style="color:#6a1b9a;">CareerSpark 🚀</h3>
+      <p>Platform that scrapes job posts from company sites and emails you daily job alerts based on preferences.</p>
+      <p><strong>Tech:</strong> Python, Streamlit, BeautifulSoup, SMTP</p>
+      <a href="https://udayasri-pagilla.github.io/Job-alert-system/" target="_blank">🌐 Live Demo</a>
+      <a href="https://github.com/udayasri-pagilla/Job-alert-system" target="_blank">🔗 GitHub Repo</a>
+    </div>
+
+    <!-- Fake Review Detector -->
+    <div style="background: #fff; border-radius: 15px; padding: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+      <h3 style="color:#6a1b9a;">Fake Review Detection App 🕵️‍♀️</h3>
+      <p>ML-powered web app to classify online reviews as genuine or fake using text classification & NLP.</p>
+      <p><strong>Tech:</strong> Python, Scikit-learn, Streamlit, Pandas</p>
+      <a href="https://fake-review-detection-lads.onrender.com/" target="_blank">🌐 Live Demo</a>
+      |
+      <a href="https://github.com/udayasri-pagilla/Fake-Review-Detector" target="_blank">🔗 GitHub</a>
+    </div>
+  </div>
+</section>
+<!-- WHY ME -->
+<section id="whyme" data-aos="fade-up" style="padding: 80px 20px; background: #fff8fc;">
+  <h2>Why Me? 🌟</h2>
+  <div style="max-width: 850px; margin: auto; font-size: 1.1rem; line-height: 1.8; color: #444; text-align: center;">
+    <p><strong>💡 Problem Solver:</strong> I don’t just code — I create solutions that solve real user pain.</p>
+    <p><strong>🧠 Fast Learner:</strong> Whether it’s a new framework or an emerging AI model, I pick it up with excitement and speed.</p>
+    <p><strong>💬 Communicator:</strong> I can explain complex things clearly — whether in code, design, or team discussions.</p>
+    <p><strong>💖 Passion-Driven:</strong> I truly enjoy building meaningful projects and pushing boundaries. Every line of code I write has intent.</p>
+    <p><strong>🎯 Consistent & Reliable:</strong> You’ll always get commitment, creativity, and consistency with me.</p>
+  </div>
+</section>
+
+
+<!-- SKILLS -->
+<section id="skills" data-aos="fade-up" style="padding: 80px 20px; background: #ffffff;">
+  <h2>Skills ⚙️</h2>
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(80px, 1fr)); gap: 30px; max-width: 700px; margin: auto; text-align: center;">
+    <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="50" title="HTML5"></div>
+    <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="50" title="CSS3"></div>
+    <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="50" title="JavaScript"></div>
+    <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" width="50" title="React"></div>
+    <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" width="50" title="Node.js"></div>
+    <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" width="50" title="Express.js"></div>
+    <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" width="50" title="Python"></div>
+    <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" width="50" title="Firebase"></div>
+    <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" width="50" title="MongoDB"></div>
+    <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" width="50" title="SQL"></div>
+    <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" width="50" title="Docker"></div>
+    <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/aws/aws-original.svg" width="50" title="AWS"></div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" data-aos="fade-up" style="padding: 80px 20px; background: #fef6ff;">
+  <h2>Resume & Contact Me 💌</h2>
+  <div style="max-width: 600px; margin: auto; text-align: center;">
+    <a href="Udayasri_Resume_Final (3).pdf" download class="button" style="background:#6a1b9a; color:white; padding: 12px 30px; border-radius: 30px; text-decoration: none; font-weight: bold; display:inline-block; margin-bottom: 30px;">📄 Download My Resume</a>
+    <div style="margin-top: 20px;">
+      <a href="mailto:udayasripagilla1873@gmail.com" style="margin: 0 15px; color:#4b0082; font-size: 1.5rem;"><i class="fas fa-envelope"></i></a>
+      <a href="https://www.linkedin.com/in/udayasri-pagilla-253633257" target="_blank" style="margin: 0 15px; color:#4b0082; font-size: 1.5rem;"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/udayasri-pagilla" target="_blank" style="margin: 0 15px; color:#4b0082; font-size: 1.5rem;"><i class="fab fa-github"></i></a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer style="background:#f2eafc; padding: 30px 20px; text-align: center;">
+  <p style="font-size: 1rem; color: #4b0082;">✨ Built with 💖 by <strong>Udayasri</strong> | © 2025</p>
+</footer>
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+  new Typed("#typed-text", {
+    strings: ["Software Engineer 💻", "ML Enthusiast 🧠", "Full Stack Dev 🚀", "Dreamer & Doer ✨"],
+    typeSpeed: 50,
+    backSpeed: 30,
+    loop: true
+  });
+</script>
+
+</body>
+</html>
